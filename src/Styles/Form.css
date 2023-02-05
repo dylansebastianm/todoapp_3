@@ -1,0 +1,20 @@
+.Form{
+    display: flex;
+    justify-content: center;
+   
+}
+  
+  
+    
+
+
+.inputForm{
+    height: 4rem;
+    width: 25rem;
+    margin-top: auto;
+    margin-bottom: auto;  
+
+}
+.inputForm::placeholder{
+    text-align: start
+}

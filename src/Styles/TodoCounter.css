@@ -1,0 +1,49 @@
+.contador{
+    display: flex;  
+    margin-left: 1rem;
+    margin-right: 1rem;
+    justify-content: space-between;
+    font-family: 'DM Sans', sans-serif; 
+    color: gray;
+    
+    
+}
+
+
+
+.filtro{
+    display: inline-block;
+    margin-left: 0.2rem;
+    cursor: pointer;
+/*     background-color: rgba(107, 105, 105, 0.308); */
+    color: gray;
+    border-radius: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 13.5px;
+    
+}
+
+.filtro:hover{
+    background-color: rgba(107, 105, 105, 0.308);
+    color: white;
+
+
+}
+
+
+
+.filtroActivo{
+    display: inline-block;
+    margin-left: 0.2rem;
+    cursor: pointer;
+    background-color: rgba(107, 105, 105, 0.308);
+    color: rgba(46, 45, 45, 0.664);
+    border-radius: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    font-size: 13.5px;
+    
+}
+
+

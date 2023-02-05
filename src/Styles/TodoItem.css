@@ -1,0 +1,113 @@
+.TodoItem{
+    display: flex;
+    flex-direction: row;
+   
+    justify-content: space-between;
+    padding: 0.2rem;
+    padding-left: 0.7rem;
+       
+}
+
+
+.Check_v2{
+    display: flex;
+    align-items: center;
+    
+}
+
+.Check{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: gray;    
+
+    
+    
+}
+
+
+ .CheckCompleted{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+    color:  rgb(58, 236, 162);
+   
+    border-color: black;
+    cursor: pointer;
+    
+
+ }
+
+
+.TodoCompletedText{
+    text-decoration: line-through wavy;
+    
+    
+    
+}
+
+.TodoText{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.863);
+    
+
+    
+    
+}
+
+.borrar{
+    display: flex;
+    font-size: 1.5rem;
+    color: rgba(255, 7, 7, 0);
+    cursor:pointer; 
+}
+.borrar:hover{
+    display: flex;
+    font-size: 1.5rem;
+    color: rgba(255, 7, 7, 0.692);
+    cursor:pointer; 
+}
+
+.checkYpalabra{
+    display: flex;
+}
+
+.TodoItemCompleted{
+    background-color: rgba(143, 150, 149, 0.205);
+    text-decoration: line-through rgb(77, 73, 73);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* .Check{
+    border-radius: 50%;
+    border: 1px solid black;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 1rem;
+    text-align: center;
+} */
+
+/* .CheckCompleted{
+   /*  border-radius: 50%;
+    border: 1px solid black;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    background-color: green;
+    text-decoration: line-through;
+ */

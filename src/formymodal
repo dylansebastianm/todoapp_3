@@ -1,0 +1,120 @@
+import { Button, Modal } from 'antd';
+import { useState } from 'react';
+import React from 'react';
+import { ButtonForm, Form, Input, Radio } from 'antd';
+
+
+
+
+function Modalito ({addTodo, setOpenModal}) {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const showModal = () => {
+    setIsModalOpen(true);
+  };
+  const handleOk = () => {
+    setIsModalOpen(false);
+  };
+  const handleCancel = () => {
+    setIsModalOpen(false);
+  };
+
+
+
+
+
+
+
+
+
+
+
+  const [newTodoValue, setTodoValue] = React.useState("")
+
+    const onChange = (event) => {
+        setTodoValue(event.target.value)
+    }
+    
+    const onSaveTodo = (event) => {
+        event.preventDefault();
+        addTodo(newTodoValue)
+        setOpenModal(prevState => !prevState); 
+    }
+
+    const onCanceleTodo = () => {
+        setOpenModal(prevState => !prevState);      
+
+    }
+
+
+
+
+  const [form] = Form.useForm();
+  const [formLayout, setFormLayout] = useState('horizontal');
+  const onFormLayoutChange = ({ layout }) => {
+    setFormLayout(layout);
+  };
+  const formItemLayout =
+    formLayout === 'horizontal'
+      ? {
+          labelCol: {
+            span: 4,
+          },
+          wrapperCol: {
+            span: 14,
+          },
+        }
+      : null;
+  const buttonItemLayout =
+    formLayout === 'horizontal'
+      ? {
+          wrapperCol: {
+            span: 14,
+            offset: 4,
+          },
+        }
+      : null;
+
+
+
+
+  return (
+    <>
+      <Button type="primary" onClick={showModal}>
+        Open Modal
+      </Button>
+      <Modal title="Basic Modal" open={isModalOpen} onOk={handleOk} onCancel={handleCancel}>
+      
+            <Form
+            {...formItemLayout}
+            layout={formLayout}
+            form={form}
+            initialValues={{
+                layout: formLayout,
+            }}
+            onValuesChange={onFormLayoutChange}
+            style={{
+                maxWidth: 600,
+            }}
+            >
+            <Form.Item label="Form Layout" name="layout">
+                <Radio.Group value={formLayout}>
+                <Radio.Button value="horizontal">Horizontal</Radio.Button>
+                <Radio.Button value="vertical">Vertical</Radio.Button>
+                <Radio.Button value="inline">Inline</Radio.Button>
+                </Radio.Group>
+            </Form.Item>
+         {/*    <Form.Item label="Field A">
+                <Input placeholder="input placeholder" />
+            </Form.Item> */}
+            <Form.Item label="">
+                <Input placeholder="input placeholder" />
+            </Form.Item>
+            <Form.Item {...buttonItemLayout}>
+                <ButtonForm type="primary">Submit</ButtonForm>
+            </Form.Item>
+            </Form>
+      </Modal>
+    </>
+  );
+};
+export default Modalito;

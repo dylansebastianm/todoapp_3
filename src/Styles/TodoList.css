@@ -1,0 +1,16 @@
+
+.contenedor-items{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* background-color: rgba(60, 241, 211, 0.048);; */
+    justify-content: center;
+}
+
+.contenedor-items-Completed{
+    display: flex;  
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgba(60, 241, 211, 0.048);;
+    justify-content: center;
+}   

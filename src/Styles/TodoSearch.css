@@ -1,0 +1,21 @@
+.buscador{
+    width: 20rem;
+    height: 2rem;
+    border: none;
+    outline: none;
+        
+}
+
+.bus-contenedor{
+    display: flex;
+    justify-content: center;
+    justify-content: flex-start;
+    margin-bottom: 0;
+    margin-left: 1rem;
+    margin-top: 0.7rem;
+    
+}
+
+.input:active{
+    border: none
+}
