@@ -31,7 +31,7 @@
 }
 
 
-@media (max-width:800px) {
+@media (max-width:500px) {
 
     .Form{
        
@@ -41,6 +41,22 @@
     .inputForm{
         width: 340px !important;
         margin-left: 0.9rem !important;
+    }
+      
+    
+  }
+
+
+  @media (max-width:360px) {
+
+    .Form{
+       
+        width: 80% !important;
+    }
+
+    .inputForm{
+        width: 290px !important;
+        margin-left: 0.7rem !important;
     }
       
     
