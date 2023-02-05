@@ -55,7 +55,7 @@ function App() {
     });
   };
 
-  console.log("dale")
+
   const saveTodos = (newTodos) => {
     const strigifiedTodos = JSON.stringify(newTodos);
     localStorage.setItem("TODOS_V1", strigifiedTodos);

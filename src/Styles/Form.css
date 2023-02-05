@@ -2,15 +2,26 @@
     display: flex;
     justify-content: center;
    
+  
 }
   
-  
+.mmodal{
+    display: flex;
+    justify-content: center;
     
+  
+
+}
+
+
+.ant-modal{
+    width: 23rem !important;
+}
 
 
 .inputForm{
-    height: 4rem;
-    width: 25rem;
+    height: 3rem;
+    width: 20rem;
     margin-top: auto;
     margin-bottom: auto;  
 
@@ -18,3 +29,19 @@
 .inputForm::placeholder{
     text-align: start
 }
+
+
+@media (max-width:800px) {
+
+    .Form{
+       
+        width: 80% !important;
+    }
+
+    .inputForm{
+        width: 340px !important;
+        margin-left: 0.9rem !important;
+    }
+      
+    
+  }

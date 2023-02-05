@@ -52,24 +52,30 @@ function Modalito ({addTodo}) {
           +
         </div>
       </div>
-      <Modal className='Form'
-      title="New ToDo ✍🏻" 
-      open={isModalOpen} onOk= {handleOk}  
-      onCancel={handleCancel}
       
-      >
+        <div className='mmodal'>
+        <Modal 
+        title="New ToDo ✍🏻" 
+        open={isModalOpen} onOk= {handleOk}  
+        onCancel={handleCancel}
+        
+        >
+            <div className='Form'>
+              <Form>
+              <Form.Item className="inputForm">
+                <div className='inputForm'>
+                  <Input 
+                  className='inputForm'
+                  onChange={onChange}
+                  placeholder="Add new task.." />
+                </div>
+              </Form.Item>
+
+              </Form>
+              </div>
+        </Modal>
+      </div>
       
-            <Form>
-
-            <Form.Item className="inputForm">
-                <Input 
-                className='inputForm'
-                onChange={onChange}
-                placeholder="Add new task.." />
-            </Form.Item>
-
-            </Form>
-      </Modal>
     </>
   );
 };
