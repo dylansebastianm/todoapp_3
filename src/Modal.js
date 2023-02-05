@@ -18,7 +18,7 @@ function Modalito ({addTodo}) {
     setIsModalOpen(false);
     event.preventDefault();
     addTodo(newTodoValue)
-    setTodoValue()
+    setTodoValue();     
 
   };
   const handleCancel = () => {
@@ -67,7 +67,8 @@ function Modalito ({addTodo}) {
                   <Input 
                   className='inputForm'
                   onChange={onChange}
-                  placeholder="Add new task.." />
+                  placeholder="Add new task.." 
+                  value={newTodoValue}/>
                 </div>
               </Form.Item>
 
